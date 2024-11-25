@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estimativa de Vida</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Estimativa de Vida</h1>
+        <h1>(Se Deus quiser, vc vai morrer cedo mlk 💀)</h1>
+        <form id="life-form">
+            <label for="age">Idade:</label>
+            <input type="number" id="age" placeholder="Digite sua idade" required>
+
+            <label for="bmi">IMC (Índice de Massa Corporal):</label>
+            <input type="number" id="bmi" placeholder="Digite seu IMC" required>
+
+            <label for="diet">Como é sua alimentação?</label>
+            <select id="diet" required>
+                <option value="">Selecione...</option>
+                <option value="good">Saudável</option>
+                <option value="average">Moderada</option>
+                <option value="poor">Ruim</option>
+            </select>
+
+            <label for="exercise">Você pratica atividade física?</label>
+            <select id="exercise" required>
+                <option value="">Selecione...</option>
+                <option value="yes">Sim, regularmente</option>
+                <option value="sometimes">Às vezes</option>
+                <option value="no">Não</option>
+            </select>
+
+            <label for="location">Você mora em:</label>
+            <select id="location" required>
+                <option value="">Selecione...</option>
+                <option value="urban">Zona urbana</option>
+                <option value="rural">Zona rural</option>
+            </select>
+
+            <button type="button" id="calculate-btn">Calcular Estimativa</button>
+        </form>
+        <div class="result" id="result"></div>
+    </div>
+    <script src="script.js"></script>
+
+    <footer>
+        <p>Criado por Murilo Quartz, vulgo embreagem. 🐦‍🔥</p>
+    </footer>
+
+</body>
+</html>
